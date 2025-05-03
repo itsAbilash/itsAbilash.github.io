@@ -1,0 +1,147 @@
+/* --- Existing About Section (keep yours if already defined) --- */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 80px 170px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-title {
+    position: relative;
+  }
+  
+  .about-title h1 {
+    font-size: 60px;
+    padding: 0px 30px;
+    font-weight: 600;
+  }
+  
+  .about-title img {
+    position: absolute;
+    width: 140%;
+    height: auto;
+    bottom: -20px;
+    right: -50px;
+    z-index: -1;
+  }
+  
+  .about-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .about-left img {
+    width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .about-right {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .about-para p {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+/* --- Skills Section --- */
+.about-skills {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .about-skills h2 {
+    font-size: 60px;
+    padding: 0px 30px;
+    font-weight: 600;
+    margin-bottom: 70px;
+  }
+    .about-title img {
+    position: absolute;
+    bottom: -20px;
+    right: -50px;
+    z-index: -1;
+  }
+  
+  /* The Grid for Skills */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Each skill-item container */
+  .skill-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Skill Logos */
+  .skill-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Zoom on hover */
+  .skill-item:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* Tooltip hidden initially */
+  .skill-tooltip {
+    position: absolute;
+    top: 0;
+    transform: translateY(-40px);
+    background: #333333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Smoother spring-like pop */
+    z-index: 10;
+  }
+  
+  /* Tooltip visible on hover */
+  .skill-item:hover .skill-tooltip {
+    opacity: 1;
+    transform: translateY(-70px);
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .about-sections {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .skills-grid {
+      gap: 20px;
+    }
+  
+    .skill-item img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

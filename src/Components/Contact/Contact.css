@@ -1,0 +1,110 @@
+.contact-section {
+    padding: 80px 120px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-heading {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
+
+  .contact-heading {
+    position: relative;
+    font-size: 60px;
+    margin-bottom: 60px;
+    z-index: 1;
+  }
+  
+  .contact-heading h2 {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .paint-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    width: 25%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.8; /* optional */
+    pointer-events: none; /* so it doesn’t block inputs */
+  }
+  
+  
+  .contact-heading span {
+    background: white;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .contact-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, orange, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .contact-details p {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px;
+    border: none;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .contact-form button {
+    padding: 15px;
+    background: linear-gradient(90deg, #a100ff, #ff6a00);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background: linear-gradient(90deg, #8000ff, #ff9900);
+  }
+  

@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background:  #161513;
+  color: white;
+  font-family: 'outfit';
+}
+.breathing-light {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 3000px;
+  height: 2000px;
+  background: radial-gradient(circle, #8000ff 0%, #00000000 70%);
+  border-radius: 50%;
+  opacity: 0.20;
+  animation: breathe 6s ease-in-out infinite;
+  z-index: -1; /* Behind the content */
+  pointer-events: none; /* So it doesn't block clicks */
+}
+
+/* Breathing animation */
+@keyframes breathe {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0.15;
+  }
+}
