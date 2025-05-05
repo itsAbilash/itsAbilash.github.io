@@ -119,7 +119,7 @@ const Experience = () => {
             borderRadius: '20px'
         }}
         contentArrowStyle={{ borderRight: '7px solid #8000ff' }}
-          date="Sep 2021 – Jul 2023"
+          date="Dec 2018 – Aug 2023"
           iconStyle={{ background: '#8000ff', color: '#fff' }}
           icon={<FaBriefcase />}
         >

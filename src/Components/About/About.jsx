@@ -12,6 +12,8 @@ import SQL_l from '../../assets/SQL.svg'
 import GCP_l from '../../assets/GCP.png'
 import hadoop_l from '../../assets/Hadoop.png'
 import spark_l from '../../assets/Apache_Spark_logo.svg'
+import powerBI from '../../assets/New_Power_BI_Logo.svg'
+import tableau from '../../assets/Tableau-Symbol.png'
 
 const About = () => {
   return (
@@ -33,8 +35,7 @@ const About = () => {
         {/* Right (Text Paragraph) */}
         <div className="about-right" data-aos="fade-up" data-aos-delay="300">
           <div className="about-para">
-            <p>Hi 👋</p>
-            <p>I am an AI/ML Engineer with a strong foundation in data engineering and business intelligence. Possesses 6+ years of experience in designing, developing, and deploying scalable AI solutions, including expertise in machine learning, NLP, and Generative AI.  Proficient in a wide range of technologies, including Python, SQL, LangChain, OpenAI, vector similarity search, and multi-cloud platforms.  Experience in building ETL pipelines using Informatica PowerCenter and developing full-stack applications.  Proven ability to analyze complex datasets, extract key insights, and communicate findings through data visualizations using Tableau and Power BI.</p>
+            <p>Bridging the realms of Artificial Intelligence and robust data infrastructure, I am an AI/ML Engineer dedicated to architecting intelligent and scalable solutions. My expertise extends across the full technology stack, from crafting intuitive front-end experiences with Node.js to engineering resilient Python backends and optimized ETL pipelines. I thrive on the complexities of leveraging Machine Learning, Natural Language Processing, and Generative AI to dissect intricate challenges and forge innovative pathways forward. My experience includes designing and implementing ETL workflows using Informatica PowerCenter, ensuring efficient data integration and transformation. My toolkit includes a strong command of Python, SQL, and the semantic capabilities of LangChain, coupled with proficiency in various database management systems, enabling me to deliver end-to-end systems that transform raw data into actionable, high-impact intelligence. <br />My academic foundation in data-driven problem-solving is fortified by a Master of Science in Business Analytics from the University of Illinois Chicago, where I graduated with a GPA of 3.95, providing me with a rigorous understanding of analytical methodologies and their strategic application.</p>
           </div>
         </div>
 
@@ -94,6 +95,15 @@ const About = () => {
               <img src={spark_l} alt="Apache Spark" />
               <span className="skill-tooltip">Apache Spark</span>
             </div>
+            <div className="skill-item" data-aos="fade-up" data-aos-delay="950">
+              <img src={powerBI} alt="Power BI" />
+              <span className="skill-tooltip">Power BI</span>
+            </div>
+            <div className="skill-item" data-aos="fade-up" data-aos-delay="950">
+              <img src={tableau} alt="tableau" />
+              <span className="skill-tooltip">Tableau</span>
+            </div>
+
 
           </div>
         </div>

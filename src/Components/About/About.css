@@ -43,13 +43,15 @@
   }
   
   .about-right {
-    max-width: 600px;
+    flex:1;
+    max-width: 760px;
     text-align: left;
   }
   
   .about-para p {
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    line-height: 40px;
   }
   
 /* --- Skills Section --- */
@@ -130,18 +132,87 @@
   
   /* Responsive Tweaks */
   @media (max-width: 768px) {
-    .about-sections {
+    .about{
+      gap: 80px;
+      margin: 50px 70px;
+      align-items: start;
+    }
+    .about-title h1 {
+      font-size: 40px;
+      padding: 0;
+      margin-bottom: 0px;
+    }
+    .about-title img {
+      width: 130%;
+      height: auto;
+      bottom: -5px;
+      right: -10px;
+    }
+    .about-sections{
       flex-direction: column;
-      align-items: center;
+    }
+    .about-left{
+      display: none;
+    }
+    .about-para p{
+      margin-top: 0;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .about-skills{
+      text-align: left;;
+    }
+    .about-skills h2 {
+      font-size: 40px;
+      padding: 0px;
+      margin-bottom: 100px;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
     }
     
-    .skills-grid {
-      gap: 20px;
-    }
-  
-    .skill-item img {
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: 100px;
       height: 100px;
     }
+    
+    .skill-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .skill-item img:hover {
+      transform: scale(1.1);
+    }
+    .skill-tooltip {
+      position: absolute;
+      top: 0;
+      transform: translateY(-40px);
+      background: #333333;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      opacity: 0;
+      pointer-events: none;
+      white-space: nowrap;
+      font-size: 1rem;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Smoother spring-like pop */
+      z-index: 10;
+    }
+
+   
   }
   

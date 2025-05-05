@@ -107,4 +107,56 @@
   .contact-form button:hover {
     background: linear-gradient(90deg, #8000ff, #ff9900);
   }
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .contact-heading {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+  
+    .paint-background {
+      width: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info h3 {
+      font-size: 24px;
+    }
+  
+    .contact-details p {
+      justify-content: center;
+      font-size: 0.95rem;
+    }
+  
+    .contact-form {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.95rem;
+    }
+  
+    .contact-form button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
   

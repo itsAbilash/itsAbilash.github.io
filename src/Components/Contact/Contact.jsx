@@ -38,7 +38,9 @@ const Contact = () => {
         {/* LEFT - INFO */}
         <div className="contact-info" data-aos="fade-right">
           <h3>Let's <span>talk</span></h3>
-          <p>I'm currently open to fulltime positions.</p>
+          <p>Ideas start with a conversation.
+<br />Let’s build something intelligent together.
+<br />Currently exploring full-time opportunities—referrals, leads, or a simple hello are all welcome!</p>
           <div className="contact-details">
             <p><FaEnvelope /> abilashsivakumars@gmail.com</p>
             <p><FaPhoneAlt /> +1-312-358-9687</p>

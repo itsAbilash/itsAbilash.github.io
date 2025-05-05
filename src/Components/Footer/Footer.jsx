@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Left: Bio */}
         <div className="footer-left">
             <img src={logo} alt="Logo" className='logo'/>
-          <p>I am a Data Analyst that converts data into useful insights to grow business</p>
+          <p>I'm Abilash Sivakumar, Architect of self-evolving AI systems. Where raw data becomes strategic foresight</p>
         </div>
 
         {/* Right: Email Subscribe */}
